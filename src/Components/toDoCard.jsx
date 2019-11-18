@@ -1,14 +1,6 @@
 import React from 'react'
-import InputTexts from 'InputTexts'
 
 class toDoCard extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-
-        }
-    }
-
     render(){
         return(
             <div className='cardContainer'>
@@ -18,17 +10,6 @@ class toDoCard extends React.Component{
             </div>
         )
     }
-};  
+};
 
-
-
- function MainContent (){
-    return(
-        <div className = "MainContent">
-            <InputTexts />
-            <toDoCard />
-        </div>
-    )
- };
-
- export default MainContent
+export default toDoCard
