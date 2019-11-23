@@ -1,11 +1,20 @@
 import React from 'react'
 
-function NavBar(){
-    return (
-        <div className="navbar">
-            <h2>The best To Do Application across the Web!!</h2>
-        </div>
-    )
-};
+class NavBar extends React.Component{
+    constructor(){
+        super();
+        this.state  = {
+
+        }
+    }
+
+    render(){
+        return(
+            <div className = 'NavBar'>
+                <h1>Welcome !!, To The Best To do Application Across the web</h1>
+            </div>
+        )
+    }
+}
 
 export default NavBar

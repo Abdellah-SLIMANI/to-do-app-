@@ -1,15 +1,18 @@
 import React from 'react'
 
-class toDoCard extends React.Component{
-    render(){
+function TodoCard(props) {
+    const footer = new Date();
         return(
-            <div className='cardContainer'>
-                <h1>Here Goes the Todo title</h1>
-                <h3>Here Goes the Description of the Todo Item</h3>
-                <footer>Here Goes the Date informations</footer>
+            <div className = "TodoCard">
+                <h1> Title</h1>
+                <hr className = "hrLine"/>
+                <h4>{props.title}</h4>
+                <hr className = "hrLine"/>
+                <footer>{props.Description}</footer>
             </div>
         )
     }
-};
 
-export default toDoCard
+
+
+export default TodoCard
